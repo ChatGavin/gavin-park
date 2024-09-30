@@ -1,5 +1,5 @@
 //
-import Flow from '@view/flow/index.jsx'
+import Flow from '@view/form-fields/index.jsx'
 
 function App() {
     return (
