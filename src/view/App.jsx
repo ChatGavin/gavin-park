@@ -1,9 +1,9 @@
-//
-import Flow from '@view/form-fields/index.jsx'
+// 入口
+import FormFields from '@view/form-fields/index.jsx'
 
 function App() {
     return (
-        <Flow/>
+        <FormFields/>
     )
 }
 
