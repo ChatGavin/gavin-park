@@ -1,9 +1,9 @@
 // 入口
-import FormFields from '@view/form-fields/index.jsx'
+import MyForm from '@view/form/index.jsx'
 
 function App() {
     return (
-        <FormFields/>
+        <MyForm/>
     )
 }
 
