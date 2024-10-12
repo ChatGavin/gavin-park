@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 //
 import 'normalize.css'
+import '@style/index.js'
 //
 import App from '@view/App.jsx'
 
