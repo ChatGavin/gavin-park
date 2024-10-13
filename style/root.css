@@ -1,0 +1,6 @@
+:root {
+    --border: #ddd; /* 边框颜色 */
+    --antdblue: #1890ff; /* antd 蓝色 */
+    --geekblue-3: #adc6ff; /* 主题色 - 3 */
+    --geekblue-5: #597ef7; /* 主题色 */
+}
