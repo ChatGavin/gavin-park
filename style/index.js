@@ -1,1 +1,1 @@
-import './color.css'
+import './root.css'
