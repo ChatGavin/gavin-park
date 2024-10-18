@@ -6,14 +6,16 @@ export default function App() {
     return (
         <div className={styles.header}>
             <div className={styles.flex}>
-                <div className={styles.title}>ProFormFields</div>
+                <div className={styles.title}>
+                    <AntDesignOutlined className={styles.title}/> ProForm
+                </div>
                 <div>
                     <Tooltip title="Ant Design">
                         <AntDesignOutlined
                             className={styles.icon}
                             style={{marginRight: '5px', color: '#1890ff'}}
                             onClick={() => {
-                                window.open('https://ant.design/components/overview-cn')
+                                window.open('https://procomponents.ant.design/components')
                             }}/>
                     </Tooltip>
                     <Tooltip title="Github">

@@ -37,11 +37,7 @@
 .title {
     font-size: 16px;
     font-weight: bold;
-    /*斜纹栅栏渐变*/
-    background: repeating-linear-gradient(-45deg, var(--geekblue-5), var(--geekblue-5) 10px, var(--geekblue-3) 10px, var(--geekblue-3) 20px
-    );
-    -webkit-background-clip: text;
-    color: transparent;
+    color: var(--antdblue);
 }
 
 /**/

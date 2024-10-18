@@ -1,20 +1,13 @@
 import styles from './layout.module.css'
-import {observer} from "mobx-react-lite";
-import FieldStore from '@store/form/FieldStore.js'
 //
-import {ProForm, ProFormGroup} from '@ant-design/pro-components';
+import FormFields from '@view/form/fields/index.jsx';
 
-const App = observer(() => {
-    let ActiveComponent = FieldStore.getActiveComponent();
+const App = () => {
     return (
         <div className={styles.midTop}>
-            <ProForm>
-                <ProFormGroup>
-                    <ActiveComponent/>
-                </ProFormGroup>
-            </ProForm>
+            <FormFields/>
         </div>
     );
-})
+}
 
 export default App;
