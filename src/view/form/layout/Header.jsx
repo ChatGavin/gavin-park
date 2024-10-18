@@ -7,7 +7,7 @@ export default function App() {
         <div className={styles.header}>
             <div className={styles.flex}>
                 <div className={styles.title}>
-                    <AntDesignOutlined className={styles.title}/> ProForm
+                    Antd ProForm
                 </div>
                 <div>
                     <Tooltip title="Ant Design">
