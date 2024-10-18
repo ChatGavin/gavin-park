@@ -1,6 +1,6 @@
 import styles from './layout.module.css'
 import {Tooltip} from 'antd'
-import {AntDesignOutlined, GithubOutlined} from '@ant-design/icons'
+import {BookOutlined} from '@ant-design/icons'
 
 export default function App() {
     return (
@@ -10,19 +10,11 @@ export default function App() {
                     Antd ProForm
                 </div>
                 <div>
-                    <Tooltip title="Ant Design">
-                        <AntDesignOutlined
-                            className={styles.icon}
-                            style={{marginRight: '5px', color: '#1890ff'}}
-                            onClick={() => {
-                                window.open('https://procomponents.ant.design/components')
-                            }}/>
-                    </Tooltip>
-                    <Tooltip title="Github">
-                        <GithubOutlined
+                    <Tooltip title="高级表单">
+                        <BookOutlined
                             className={styles.icon}
                             onClick={() => {
-                                window.open('https://github.com/linidea/antd-visual')
+                                window.open('https://procomponents.ant.design/components/form')
                             }}/>
                     </Tooltip>
                 </div>
