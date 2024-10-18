@@ -37,7 +37,7 @@
 .title {
     font-size: 16px;
     font-weight: bold;
-    color: var(--antdblue);
+    color: var(--geekblue);
 }
 
 /**/
@@ -50,17 +50,28 @@
 
 /**/
 .left {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;*/
+    /*flex-direction: column;*/
     height: calc(100vh - 40px);
-    padding: 10px;
     overflow: auto;
     border-right: 1px solid var(--border);
+}
+
+.left :global(.ant-tabs-nav-list) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left :global(.ant-tabs-tab) {
+    width: 50%;
+    justify-content: center;
 }
 
 .CheckCardGroup {
     display: flex;
     flex-direction: column;
+    padding: 0 10px;
 }
 
 .CheckCardItem {
