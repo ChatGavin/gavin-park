@@ -1,4 +1,4 @@
-import styles from '../layout.module.css'
+import styles from '../style/layout.module.css'
 import MidTop from './MidTop.jsx'
 import MidBottom from './MidBottom.jsx'
 

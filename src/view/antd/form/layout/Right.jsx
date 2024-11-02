@@ -1,4 +1,4 @@
-import styles from '../layout.module.css'
+import styles from '../style/layout.module.css'
 
 export default function App() {
     return (

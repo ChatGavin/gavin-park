@@ -1,4 +1,4 @@
-import styles from '../layout.module.css'
+import styles from '../style/layout.module.css'
 import {Tooltip} from 'antd'
 import {BookOutlined} from '@ant-design/icons'
 
