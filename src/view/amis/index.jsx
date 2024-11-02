@@ -1,6 +1,8 @@
+import {Editor} from 'amis-editor';
+
 function App() {
     return (
-        123
+        <Editor/>
     )
 }
 
