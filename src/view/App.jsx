@@ -1,5 +1,5 @@
 // 入口
-import MyForm from '@view/form/index.jsx'
+import MyForm from '@view/antd/form/index.jsx'
 
 function App() {
     return (

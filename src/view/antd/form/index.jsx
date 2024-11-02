@@ -1,5 +1,5 @@
 //
-import Layout from '@view/form/layout/index.jsx'
+import Layout from '@view/antd/form/layout/index.jsx'
 
 export default function App() {
     return (

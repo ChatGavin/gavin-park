@@ -1,6 +1,6 @@
 import styles from '../layout.module.css'
 import {observer} from "mobx-react-lite";
-import FieldStore from '@store/form/FieldStore.js'
+import FieldStore from '@store/antd/form/FieldStore.js'
 //
 import {Tabs} from 'antd';
 import {CheckCard} from '@ant-design/pro-components';
