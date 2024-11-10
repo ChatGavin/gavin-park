@@ -7,7 +7,7 @@ export default function App() {
         <div className={styles.header}>
             <div className={styles.flex}>
                 <div className={styles.title}>
-                    Antd ProForm
+                    Antd Form
                 </div>
                 <div>
                     <Tooltip title="高级表单">
