@@ -1,8 +1,22 @@
 //
-import Layout from '@view/form/layout/index.jsx'
+import styles from './style/layout.module.css'
+//
+import Header from './layout/Header.jsx'
+import Left from './layout/Left.jsx'
+import Middle from './layout/Middle.jsx'
+import Right from './layout/Right.jsx'
 
-export default function App() {
+function App() {
     return (
-        <Layout/>
+        <div className={styles.container}>
+            <Header/>
+            <div className={styles.main}>
+                <Left/>
+                <Middle/>
+                <Right/>
+            </div>
+        </div>
     );
 }
+
+export default App;

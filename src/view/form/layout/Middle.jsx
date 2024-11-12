@@ -1,8 +1,10 @@
+//
 import styles from '../style/layout.module.css'
+//
 import MidTop from './MidTop.jsx'
 import MidBottom from './MidBottom.jsx'
 
-export default function App() {
+function App() {
     return (
         <div className={styles.middle}>
             <MidTop/>
@@ -10,3 +12,5 @@ export default function App() {
         </div>
     );
 }
+
+export default App;

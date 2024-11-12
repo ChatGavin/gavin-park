@@ -1,8 +1,10 @@
+//
 import styles from '../style/layout.module.css'
+//
 import {Tooltip} from 'antd'
 import {BookOutlined} from '@ant-design/icons'
 
-export default function App() {
+function App() {
     return (
         <div className={styles.header}>
             <div className={styles.flex}>
@@ -22,3 +24,5 @@ export default function App() {
         </div>
     );
 }
+
+export default App;

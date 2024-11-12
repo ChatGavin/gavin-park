@@ -1,9 +1,12 @@
+//
 import styles from '../style/layout.module.css'
 
-export default function App() {
+function App() {
     return (
         <div className={styles.right}>
             right
         </div>
     );
 }
+
+export default App;

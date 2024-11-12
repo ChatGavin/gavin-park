@@ -1,9 +1,14 @@
+//
 import styles from '../style/layout.module.css'
 
-export default function App() {
+//
+
+function App() {
     return (
         <div className={styles.midBottom}>
             middle - bottom
         </div>
     );
 }
+
+export default App;
