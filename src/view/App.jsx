@@ -1,6 +1,6 @@
 //
 import {Routes, Route} from "react-router-dom";
-// page entry
+// pages routes
 import Home from '@view/home/index.jsx'
 import Form from '@view/form/index.jsx'
 import NotFound from '@view/error/NotFound.jsx'

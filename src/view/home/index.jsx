@@ -1,9 +1,14 @@
 //
-import Layout from './layout/index.jsx'
+import styles from './style/layout.module.css'
+//
+import Header from './layout/Header.jsx'
 
-export default function App() {
+function App() {
     return (
-        <Layout/>
+        <div className={styles.container}>
+            <Header/>
+        </div>
     )
 }
 
+export default App;

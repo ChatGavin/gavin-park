@@ -7,6 +7,7 @@ import '@style/index.js'
 // main entry
 import App from '@view/App.jsx'
 
+// react 18 root
 const root = createRoot(document.getElementById("root"));
 
 root.render(
