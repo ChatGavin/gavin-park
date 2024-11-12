@@ -1,5 +1,5 @@
-import ProFormText from "@view/antd/form/fields/ProFormText.jsx";
-import ProFormDigit from "@view/antd/form/fields/ProFormDigit.jsx";
+import ProFormText from "@view/form/fields/ProFormText.jsx";
+import ProFormDigit from "@view/form/fields/ProFormDigit.jsx";
 // 表单字段
 export default [
     {
