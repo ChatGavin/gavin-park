@@ -1,6 +1,9 @@
+//
+import Layout from './layout/index.jsx'
+
 function App() {
     return (
-        <div>home</div>
+        <Layout/>
     )
 }
 

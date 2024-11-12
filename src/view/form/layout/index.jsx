@@ -1,4 +1,5 @@
 import styles from '../style/layout.module.css'
+//
 import Header from './Header.jsx'
 import Left from './Left.jsx'
 import Middle from './Middle.jsx'
