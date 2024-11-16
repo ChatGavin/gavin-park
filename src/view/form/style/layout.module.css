@@ -1,70 +1,10 @@
-/**/
-.container {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
-.flex {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.icon {
-    padding: 5px;
-    border-radius: 4px;
-}
-
-.icon:hover {
-    background: #f0f0f0;
-}
-
-/**/
-.header {
-    width: 100%;
-    height: 50px;
-    padding: 0 20px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    border-bottom: 1px solid var(--border);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.title {
-    height: 50px;
-    line-height: 50px;
-    margin-left: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--geekblue);
-}
-
-/**/
-.main {
-    display: flex;
-    height: calc(100vh - 50px);
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-/**/
+/* left */
 .left {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    height: calc(100vh - 40px);
-    overflow: auto;
-    border-right: 1px solid var(--border);
+    box-sizing: border-box;
+    border-right: var(--border-gray);
 }
 
+/* left-tabs */
 .left :global(.ant-tabs-nav-list) {
     width: 100%;
     display: flex;
@@ -76,6 +16,7 @@
     justify-content: center;
 }
 
+/* left-card */
 .CheckCardGroup {
     display: flex;
     flex-direction: column;
@@ -86,21 +27,12 @@
     margin-right: 0;
 }
 
-/**/
+/* right */
 .right {
     width: 300px;
-    height: calc(100vh - 40px);
     box-sizing: border-box;
     padding: 10px;
-    overflow: auto;
-    border-left: 1px solid var(--border);
-}
-
-/**/
-.middle {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* 填充剩余宽度 */
+    border-left: var(--border-gray);
 }
 
 /**/
@@ -108,7 +40,7 @@
     height: 50%;
     padding: 10px;
     box-sizing: border-box;
-    border-bottom: 1px solid var(--border);
+    border-bottom: var(--border-gray);
 }
 
 /**/
