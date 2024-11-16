@@ -10,7 +10,7 @@ const WithLayout = () => {
     return (
         <div className='container'>
             <Header/>
-            <Outlet/>
+            <Outlet className='main'/>
         </div>
     )
 }

@@ -5,3 +5,9 @@
     overflow: hidden;
     box-sizing: border-box;
 }
+
+.main {
+    height: var(--main-height);
+    overflow: hidden;
+    box-sizing: border-box;
+}
