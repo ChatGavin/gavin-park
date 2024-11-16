@@ -1,6 +1,12 @@
 :root {
-    --border: #ddd; /* 边框颜色 */
+    /* color */
     --antdblue: #1890ff; /* antd 蓝色 */
     --geekblue: #597ef7; /* 主题色 */
     --geekblue-3: #adc6ff; /* 主题色 - 3 */
+    /* border */
+    --border-gray: 1px solid #ddd; /* 边框 */
+    /* header height */
+    --header-height: 50px; /* 头部高度 */
+    /* main height */
+    --main-height: calc(100vh - var(--header-height)); /* 主体高度 */
 }
