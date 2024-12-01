@@ -1,8 +1,5 @@
-# React + Vite
+# MyPlugin
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 初始化浏览器插件配置文件 manifest.json
+    - manifest.json 放在 public 目录下
+    - manifest.json 的入口文件是 指向 vite 打包后的 index.html
