@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "MyPlugin",
+  "version": "0.1.0",
+  "description": "This is my plugin",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "cookies",
+    "bookmarks",
+    "history",
+    "webNavigation",
+    "notifications",
+    "geolocation",
+    "identity",
+    "management",
+    "downloads",
+    "system.cpu",
+    "system.memory",
+    "system.storage",
+    "alarms",
+    "pageCapture",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "action": {
+    "default_title": "MyPlugin",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
