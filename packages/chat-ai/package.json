@@ -1,13 +1,11 @@
 {
-  "name": "vite-project",
+  "name": "chat-ai",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint vite-project",
-    "preview": "vite preview"
+    "build": "vite build"
   },
   "dependencies": {
     "react": "^18.3.1",
