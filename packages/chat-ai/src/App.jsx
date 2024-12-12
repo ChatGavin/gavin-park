@@ -1,35 +1,68 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {useXAgent, useXChat, Sender, Bubble} from '@ant-design/x';
+import OpenAI from 'openai';
 
-function App() {
-  const [count, setCount] = useState(0)
+const client = new OpenAI({
+    baseURL: 'https://dashscope.aliyuncs.com/compatible-mode/v1',
+    apiKey: 'sk-ccdf0991249a4f379cae09b1689a0b2f',
+    dangerouslyAllowBrowser: true,
+});
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+const Demo = () => {
+    const [agent] = useXAgent({
+        request: async (info, callbacks) => {
+            const {messages, message} = info;
 
-export default App
+            const {onSuccess, onUpdate, onError} = callbacks;
+
+            // current message
+            console.log('message', message);
+
+            // history messages
+            console.log('messages', messages);
+
+            let content = '';
+
+            try {
+                const stream = await client.chat.completions.create({
+                    model: 'qwen-plus',
+                    // if chat context is needed, modify the array
+                    messages: [{role: 'user', content: message}],
+                    // stream mode
+                    stream: true,
+                });
+
+                for await (const chunk of stream) {
+                    content += chunk.choices[0]?.delta?.content || '';
+
+                    onUpdate(content);
+                }
+
+                onSuccess(content);
+            } catch (error) {
+                onError(error);
+            }
+        },
+    });
+
+    const {
+        // use to send message
+        onRequest,
+        // use to render messages
+        messages,
+    } = useXChat({agent});
+
+    const items = messages.map(({message, id}) => ({
+        // key is required, used to identify the message
+        key: id,
+        content: message,
+    }));
+
+    return (
+        <div>
+            <Bubble.List items={items}/>
+            <Sender onSubmit={onRequest}/>
+        </div>
+    );
+};
+
+export default Demo;
