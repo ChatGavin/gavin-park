@@ -14,7 +14,7 @@ import json
 url = "http://localhost:11434/api/generate"
 data = {
     "model": "llama3",
-    "prompt": "介绍一下 vue 和 react 的不同",
+    "prompt": "介绍一下 vue 和 react 的不同之处",
     "stream": False
 }
 
